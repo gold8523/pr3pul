@@ -1,0 +1,30 @@
+.catalog
+    &__tabs
+        list-style: none
+        display: flex
+        justify-content: center
+        margin-top: 69px
+    &__tab-item
+        width: 220px
+        height: 50px
+        margin: 0 5px
+        border: solid 2px #d0d0d0
+        transform: skewX(-25deg)
+        font-size: 18px
+        font-weight: 500
+        line-height: 50px
+        text-align: center
+        color: #6b6b6b
+        text-transform: uppercase
+        cursor: pointer
+        div
+            transform: skewX(25deg)
+        &_active
+            background-color: $primary_color
+            color: #ffffff
+            border: none
+            box-shadow: 2px 2px 15px $primary_color
+    &__wrapper
+        display: none
+        &_active
+            display: block
