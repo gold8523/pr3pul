@@ -25,10 +25,11 @@ document.addEventListener('DOMContentLoaded', function(){ // Аналог $(docu
 			});
 			// добавляем активный класс при клике
 			item.classList.add('catalog__tab-item_active')
-			// 
+			// удаляем активый класс со всех контейнеров
 			wrapItem.forEach((item, index) => {
 				item.classList.remove('catalog__wrapper_active');
 			});
+			// добавляем активный класс к нужному контейнеру
 			wrapItem[tabItem].classList.add('catalog__wrapper_active');
 		});
 	});
