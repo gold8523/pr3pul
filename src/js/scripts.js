@@ -14,7 +14,8 @@ document.addEventListener('DOMContentLoaded', function(){ // Аналог $(docu
 
 	document.querySelector('.next').addEventListener('click', function () {
 		slider.goTo('next');  
-	}); 
+	});
+	 
 	let wrapItem = document.querySelectorAll('.catalog__wrapper');
 	document.querySelectorAll('.catalog__tab-item').forEach((item, index, arr) => {
 		item.addEventListener('click', function(){
@@ -33,4 +34,6 @@ document.addEventListener('DOMContentLoaded', function(){ // Аналог $(docu
 			wrapItem[tabItem].classList.add('catalog__wrapper_active');
 		});
 	});
+
+	
 });
