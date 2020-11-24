@@ -35,5 +35,19 @@ document.addEventListener('DOMContentLoaded', function(){ // Аналог $(docu
 		});
 	});
 
-	
+	document.querySelectorAll('.catalog-item__wrapper').forEach((item, index) => {
+		let content = item.firstElementChild;
+		let list = item.lastElementChild;
+		// Переключаем активный класс у карточки
+		function toggleActive(active) {
+			active.lastElementChild.addEventListener('click', function(event) {
+				event.preventDefault();
+				content.classList.toggle('catalog-item__content_active');
+				list.classList.toggle('catalog-item__list_active');
+			});
+		};
+
+		toggleActive(content);
+		toggleActive(list);
+	});
 });
