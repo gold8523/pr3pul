@@ -35,7 +35,7 @@ document.addEventListener('DOMContentLoaded', function(){ // Аналог $(docu
 		});
 	});
 
-	document.querySelectorAll('.catalog-item__wrapper').forEach((item, index) => {
+	document.querySelectorAll('.catalog-item__wrapper').forEach((item) => {
 		let content = item.firstElementChild;
 		let list = item.lastElementChild;
 		// Переключаем активный класс у карточки
